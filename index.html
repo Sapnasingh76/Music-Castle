@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC-Castle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="1st navbar">
+        <ul>
+            <li class="logo"><img src="logo1.png" alt="MUSIC-Castle">MUSIC-Castle</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container1">
+        
+        <div class="songlist">
+            <h1>Best of trending songs - reccommended playlist</h1>
+             <div class="songItemcontainer">
+
+
+            <div class="songItem">
+
+                <img alt="1">
+                <span class="songName">Die with a smile</span>
+                <span class="songlistplay"><span class="timestamp" >03:02<i id="0" class="far songItemPlay fa-play-circle"></i></span></span></span>
+            </div><br>
+            <div class="songItem" >
+                <img  alt="1">
+                <span class="songName">Set fire to the rain</span> 
+                <span class="songlistplay"><span class="timestamp" >04:09<i id="1" class="far songItemPlay fa-play-circle"></i></span></span></span>
+            </div><br>
+                <div class="songItem" >
+                    <img alt="1">
+                    <span class="songName">thousand year</span>
+                    <span class="songlistplay"><span class="timestamp" >04:45<i id="2" class="far songItemPlay fa-play-circle"></i></span></span></span>
+                    </div><br>
+                    <div class="songItem">
+                        <img  alt="1">
+                        <span class="songName">Unstoppable</span>
+                        <span class="songlistplay"><span class="timestamp" >04:06<i  id="3" class="far songItemPlay fa-play-circle"></i></span></span></span>
+                        </div><br>
+                
+                        <div class="songItem">
+                            <img alt="1">
+                            <span class="songName">Somewhere only we know</span>
+                            <span class="songlistplay"><span class="timestamp" >03:04<i   id="4"class="far songItemPlay fa-play-circle"></i></span></span></span>
+                            </div><br>
+                            <div class="songItem">
+                                <img  alt="1">
+                                <span class="songName">Dusk till down</span>
+                                <span class="songlistplay"><span class="timestamp" >03:59<i  id="5" class="far songItemPlay fa-play-circle"></i></span></span></span>
+                                </div><br>
+                                </div>
+                                
+            </div>
+        
+        <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="progressbar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome-- -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterplay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+
+        <div class="songinfo">
+            <img src="sound.gif"  width= "42px" alt="" id="gif"><span id="masterSongName">Die with a smile - Bruno mars & Lady Gaga</span></div>
+    </div>
+    <audio src="songs/1.mp3.mp3"></audio>
+    <audio src="songs/2.mp3.mp3"></audio>
+    <audio src="songs/3.mp3.mp3"></audio>
+    <audio src="songs/4.mp3.mp3"></audio>
+    <audio src="songs/5.mp3.mp3"></audio>
+    <audio src="songs/6.mp3.mp3"></audio>
+    
+
+
+     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="script.js"></script>
+</body>
+</html>
