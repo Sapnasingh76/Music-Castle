@@ -1,7 +1,7 @@
 console.log("WELCOME TO MUSIC-Castle")
 //Intialise the Variable
 let songIndex = 0;
-let audioElement = new Audio("songs/1.mp3.mp3");
+let audioElement = new Audio("songs/1.mp3");
 let masterplay = document.getElementById('masterplay');
 let progressbar = document.getElementById('progressbar');
 let gif = document.getElementById('gif');
@@ -10,12 +10,12 @@ let songItem = Array.from(document.getElementsByClassName('songItem'));
 
 
 let songs =[
-    {songName:"Die with a smile - Bruno mars & Lady Gaga",filepath :"songs/1.mp3.mp3",coverpath: "covers/die.jpg"},
-    {songName:"Set fire to the rain - Rihanna",filepath :"songs/2.mp3.mp3", coverpath:"covers/set.jpg"},
-    {songName:"Thousand year - Cristina Perri",filepath :"songs/3.mp3.mp3", coverpath:"covers/thousand.jpg"},
-    {songName:"Unstoppable - Sia",filepath :"songs/4.mp3.mp3", coverpath:"covers/unstoppable.jpg"},
-    {songName:"Somewhere only we know - Gustixa",filepath :"songs/5.mp3.mp3", coverpath:"covers/somewhere.jpg"},
-    {songName:"Dusk till down - ZAYN",filepath :"songs/6.mp3.mp3", coverpath:"covers/dusk.jpg"},
+    {songName:"Die with a smile - Bruno mars & Lady Gaga",filepath :"songs/1.mp3",coverpath: "covers/die.jpg"},
+    {songName:"Set fire to the rain - Rihanna",filepath :"songs/2.mp3", coverpath:"covers/set.jpg"},
+    {songName:"Thousand year - Cristina Perri",filepath :"songs/3.mp3", coverpath:"covers/thousand.jpg"},
+    {songName:"Unstoppable - Sia",filepath :"songs/4.mp3", coverpath:"covers/unstoppable.jpg"},
+    {songName:"Somewhere only we know - Gustixa",filepath :"songs/5.mp3", coverpath:"covers/somewhere.jpg"},
+    {songName:"Dusk till down - ZAYN",filepath :"songs/6.mp3", coverpath:"covers/dusk.jpg"},
 ]
 
 songItem.forEach((element,i)=>{
@@ -80,7 +80,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `songs/${songIndex + 1}.mp3.mp3`;
+        audioElement.src = `songs/${songIndex + 1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -94,13 +94,13 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 
 })
 document.getElementById('next').addEventListener('click',()=>{
-    if(songIndex >=4){
+    if(songIndex >=5){
         songIndex = 0
     }
     else{
         songIndex += 1;
     }
-        audioElement.src = `songs/${songIndex + 1}.mp3.mp3`;
+        audioElement.src = `songs/${songIndex + 1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -115,7 +115,7 @@ document.getElementById('previous').addEventListener('click',()=>{
     else{
         songIndex -= 1;
     }
-        audioElement.src = `songs/${songIndex + 1}.mp3.mp3`;
+        audioElement.src = `songs/${songIndex + 1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
